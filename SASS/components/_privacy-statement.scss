@@ -1,0 +1,42 @@
+.privacy-statement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: getColor("text");
+    margin-left: 7px;
+    &--link {
+      color: getColor("blue");
+    }
+  }
+  &__checkbox {
+    display: block;
+    width: 16px;
+    height: 15px;
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    border-color: getColor("maintext");
+    transition: $transitionBorder;
+    transition: $backgroundImage;
+    cursor: pointer;
+    &:checked {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Crect width='16' height='15' fill='%232196F3' rx='2'/%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
+      background-size: 15px 16px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-color: getColor("blue");
+    }
+  }
+}
+
+.hidden-checkbox {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}

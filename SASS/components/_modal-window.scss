@@ -1,0 +1,50 @@
+@import "../utils/vars";
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(-50%) scale(0);
+}
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: 1s ease-in-out;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition-property: visibility, transform;
+  transition-duration: 5s;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  visibility: visible;
+  width: 528px;
+  min-height: 581px;
+  background: getColor("white");
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  &__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: getColor("white");
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    &:hover {
+      color: getColor("blue");
+      border: 1px solid getColor("blue");
+      border-radius: 50%;
+      cursor: pointer;
+      transition: $transitionBorder;
+    }
+  }
+}

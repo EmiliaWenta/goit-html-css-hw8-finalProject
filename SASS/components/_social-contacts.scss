@@ -1,0 +1,35 @@
+.social-contacts {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  &__item--bordered {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  &__item > a {
+    display: flex;
+    transition: $transitionBackground;
+    border-radius: 50%;
+    &:focus,
+    &:hover {
+      background-color: getColor("blue");
+      cursor: pointer;
+      border-radius: 50%;
+      outline: none;
+      & svg,
+      & svg {
+        fill: getColor("white");
+      }
+    }
+  }
+}
+
+.social-icon {
+  fill: #afb1b8;
+  padding: 12px;
+  transition: $transitionFill;
+  &--white {
+    fill: getColor("white");
+  }
+}

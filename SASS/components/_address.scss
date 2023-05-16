@@ -1,0 +1,23 @@
+.address {
+  padding-top: 20px;
+  &__item {
+    font-size: 14px;
+    line-height: 1.71;
+    &--text {
+      color: getColor("white");
+      font-style: normal;
+      margin-bottom: 9px;
+    }
+    &--link {
+      display: block;
+      color: rgba(255, 255, 255, 0.6);
+      font-style: normal;
+      text-decoration: none;
+      transition: $transition;
+    }
+    &--underline {
+      text-decoration: underline;
+      margin-bottom: 9px;
+    }
+  }
+}

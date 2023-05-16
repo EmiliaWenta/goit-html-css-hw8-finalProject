@@ -1,0 +1,13 @@
+@import "../utils/vars";
+
+.logo {
+  font-family: $secondaryFont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  text-decoration: none;
+  transition: $transition;
+  &--accent {
+    color: getColor("blue");
+  }
+}

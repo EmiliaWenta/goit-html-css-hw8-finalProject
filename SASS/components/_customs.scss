@@ -1,0 +1,33 @@
+.customs {
+  background-color: getColor("white");
+  &__item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: $transitionBorder;
+    & a:hover svg,
+    & a:focus svg {
+      fill: getColor("blue");
+      transition: $transitionFill;
+    }
+    &:hover,
+    &:focus-within {
+      cursor: pointer;
+      border-color: getColor("blue");
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 0px 14px 0px;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__icon {
+    fill: #afb1b8;
+  }
+}

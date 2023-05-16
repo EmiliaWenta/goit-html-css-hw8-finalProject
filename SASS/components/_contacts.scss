@@ -1,0 +1,14 @@
+@import "../utils/vars";
+
+.contacts {
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: getColor("text");
+    align-items: center;
+    gap: 10px;
+    transition: $transition;
+  }
+}

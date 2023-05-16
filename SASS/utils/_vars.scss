@@ -1,0 +1,21 @@
+$secondaryFont: "Raleway";
+
+$colors: (
+  "blue": #2196f3,
+  "white": #ffffff,
+  "dark-background": #2f303a,
+  "background-light-grey": #f5f4fa,
+  "maintext": #212121,
+  "text": #757575,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transitionBackground: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transitionFill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transitionBorder: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$backgroundImage: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transitionBoxShadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

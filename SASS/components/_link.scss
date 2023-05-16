@@ -1,0 +1,10 @@
+@import "../utils/vars";
+
+.link {
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: getColor("blue");
+  }
+}

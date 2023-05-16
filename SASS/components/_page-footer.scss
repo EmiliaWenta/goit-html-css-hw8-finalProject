@@ -1,0 +1,28 @@
+@import "../utils/vars";
+
+.page-footer {
+  background-color: getColor("dark-background");
+  &__layout {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  &__logo {
+    color: getColor("white");
+  }
+  &__social {
+    margin-left: 98px;
+  }
+  &__heading {
+    text-transform: uppercase;
+    color: getColor("white");
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    padding-bottom: 20px;
+  }
+  .subscribe-newsletter {
+    margin-left: 98px;
+  }
+}
