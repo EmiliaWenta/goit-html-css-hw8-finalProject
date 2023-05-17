@@ -8,9 +8,14 @@
 
 .page-header {
   background-color: getColor("white");
-  padding-top: 25px;
-  padding-bottom: 25px;
-  gap: 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  min-width: 320px;
+  max-width: 768px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
   &__logo {
     color: inherit;
@@ -22,5 +27,12 @@
 
   &__contacts {
     margin-left: 345px;
+  }
+
+  &__container {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
