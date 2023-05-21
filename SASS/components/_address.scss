@@ -6,7 +6,7 @@
     &--text {
       color: getColor("white");
       font-style: normal;
-      margin-bottom: 9px;
+      margin-bottom: 8px;
     }
     &--link {
       display: block;
@@ -17,7 +17,16 @@
     }
     &--underline {
       text-decoration: underline;
-      margin-bottom: 9px;
+      margin-bottom: 8px;
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address__item--text {
+    margin-bottom: 9px;
+  }
+  .address__item--underline {
+    margin-bottom: 9px;
   }
 }

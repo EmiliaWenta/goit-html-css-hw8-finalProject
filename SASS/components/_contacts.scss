@@ -3,12 +3,24 @@
 .contacts {
   &__link {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.17;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: getColor("text");
     align-items: center;
     gap: 10px;
     transition: $transition;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts {
+    flex-direction: column;
   }
 }

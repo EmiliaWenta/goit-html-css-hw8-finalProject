@@ -1,5 +1,5 @@
 .form {
-  max-width: 448px;
+  max-width: 370px;
   margin: 0 auto;
 
   &__title {
@@ -19,15 +19,17 @@
   }
 
   &__button {
-    margin-left: 124px;
+    margin: 0 auto;
     width: 200px;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-bottom: 40px;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 4px;
     position: relative;
 
@@ -60,7 +62,7 @@
       position: absolute;
       display: flex;
       justify-content: flex-start;
-      margin-right: 418px;
+      margin-right: 343px;
       left: 12px;
       top: 29px;
       width: 18px;

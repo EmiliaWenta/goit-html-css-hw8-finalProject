@@ -1,5 +1,17 @@
 .worker {
   background-color: getColor("background-light-grey");
+  &__item {
+    max-width: 450px;
+    max-height: 622px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    justify-content: center;
+    list-style: none;
+  }
   &__specyfication {
     background-color: getColor("white");
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -25,6 +37,22 @@
     color: getColor("text");
   }
   &__social-contacts {
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .worker__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .worker__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  .worker__social-contacts {
     padding-bottom: 30px;
   }
 }

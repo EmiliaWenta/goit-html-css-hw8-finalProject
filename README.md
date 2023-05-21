@@ -1,3 +1,2 @@
-# goit-markup-hw-08
-
-zadanie domowe nr 8 z kursu
+# goit-markup-hw-07
+zadanie domowe nr 7 z kursu

@@ -4,23 +4,105 @@
   display: block;
   margin: 0 auto;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/mainpage/main-big-photo.jpg);
+    url(../../images/mainpage/main-big-photo-480-400-1x.jpg);
+
   &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     color: getColor("white");
+    padding: 0 auto;
     padding-bottom: 30px;
+    padding-top: 118px;
   }
 }
 
 .button__title {
   padding: 10px 41px 10px 42px;
+  margin-bottom: 118px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-photo {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/mainpage/main-big-photo-480-400@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-photo {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/mainpage/main-big-photo-768-400.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-photo {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/mainpage/main-big-photo-768-400@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-photo {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/mainpage/main-big-photo-1600-600.jpg);
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      padding-bottom: 30px;
+      padding-top: 200px;
+    }
+  }
+  .button__title {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-photo {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/mainpage/main-big-photo-1600-600@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .main-photo__title {
+    font-size: 26px;
+    line-height: 1.61;
+    padding-top: 118px;
+  }
+  .button__title {
+    margin-bottom: 118px;
+  }
 }

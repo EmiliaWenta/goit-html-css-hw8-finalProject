@@ -6,6 +6,7 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: $transitionBorder;
+    flex-basis: calc((100% - 30px) / 2);
     & a:hover svg,
     & a:focus svg {
       fill: getColor("blue");
@@ -29,5 +30,23 @@
   }
   &__icon {
     fill: #afb1b8;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customs__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customs {
+    &__item {
+      flex-basis: calc((100% - 150px) / 5);
+    }
+
+    &__display {
+      flex-wrap: nowrap;
+    }
   }
 }

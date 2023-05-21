@@ -18,19 +18,17 @@
       rel="stylesheet"
     />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Main page</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
     <header class="page-header">
-      <div class="page-header__container">
+      <div class="container display menu-to-767">
         <a class="logo link" href="./index.html"
           ><span class="logo--accent">Web</span>Studio</a
         >
-
         <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
@@ -50,18 +48,49 @@
             ></path>
           </svg>
         </button>
+      </div>
 
-        <ul class="menu">
-          <li>
-            <a class="link1" href="./index.html">Studio</a>
-          </li>
-          <li>
-            <a class="link1" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a class="link1" href="#">Contacts</a>
-          </li>
-        </ul>
+      <div class="page-header container menu-up-1200">
+        <a class="logo page-header__logo link" href="./index.html"
+          ><span class="logo--accent">Web</span>Studio</a
+        >
+        <nav class="nav">
+          <ul class="page-header__nav nav__list display">
+            <li>
+              <div class="nav__link--is-active">
+                <a class="link nav__link" href="./index.html">Studio</a>
+              </div>
+            </li>
+            <li>
+              <a class="link nav__link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="link nav__link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="contacts display page-header__contacts">
+          <div>
+            <a
+              class="contacts__link display link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="icon" width="16" height="12">
+                <use href="./images/icon.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </div>
+          <div>
+            <a class="contacts__link display link" href="tel:+12127724150">
+              <svg class="icon" width="10" height="16">
+                <use href="./images/icon.svg#icon-smartphone"></use>
+              </svg>
+              +1 212-772-4150</a
+            >
+          </div>
+        </div>
       </div>
     </header>
 
@@ -78,10 +107,10 @@
       </section>
 
       <section class="container section company-features">
-        <ul class="display">
-          <li>
+        <ul class="display-column company-features__list">
+          <li class="company-features__item">
             <div class="company-features__image">
-              <svg width="65.32" height="70">
+              <svg width="70" height="70">
                 <use href="./images/icon.svg#icon-antenna-1"></use>
               </svg>
             </div>
@@ -91,9 +120,9 @@
               develop a customized solution.
             </p>
           </li>
-          <li>
+          <li class="company-features__item">
             <div class="company-features__image">
-              <svg width="65.32" height="70">
+              <svg width="70" height="70">
                 <use href="./images/icon.svg#icon-clock-1"></use>
               </svg>
             </div>
@@ -103,9 +132,9 @@
               the company: respect your time and deadlines.
             </p>
           </li>
-          <li>
+          <li class="company-features__item">
             <div class="company-features__image">
-              <svg width="65.32" height="70">
+              <svg width="70" height="70">
                 <use href="./images/icon.svg#icon-diagram-1"></use>
               </svg>
             </div>
@@ -115,9 +144,9 @@
               solution development and implementation.
             </p>
           </li>
-          <li>
+          <li class="company-features__item">
             <div class="company-features__image">
-              <svg width="65.32" height="70">
+              <svg width="70" height="70">
                 <use href="./images/icon.svg#icon-astronaut-1"></use>
               </svg>
             </div>
@@ -132,36 +161,36 @@
 
       <section class="container section specializations">
         <h2 class="section-heading">What we do</h2>
-        <ul class="display">
-          <li>
+        <ul class="display specializations__list">
+          <li class="specializations__list-item">
             <div class="specializations__item">
               <img
                 src="./images/mainpage/image-1.jpg"
                 alt="programista kodujący przy swoim biurku"
-                width="370"
-                height="294"
+                width="100%"
+                srcset="./images/mainpage/image-1@2x 2x.jpg"
               />
               <p class="specializations__description">desktop apps</p>
             </div>
           </li>
-          <li>
+          <li class="specializations__list-item">
             <div class="specializations__item">
               <img
                 src="./images/mainpage/image-2.jpg"
+                srcset="./images/mainpage/image-2@2x 2x.jpg"
                 alt="programista wybierający interfejs aplikacji mobilnej"
-                width="370"
-                height="294"
+                width="100%"
               />
               <p class="specializations__description">mobile apps</p>
             </div>
           </li>
-          <li>
+          <li class="specializations__list-item">
             <div class="specializations__item">
               <img
                 src="./images/mainpage/image-3.jpg"
+                srcset="./images/mainpage/image-3@2x 2x.jpg"
                 alt="programista wybierający kolor z palety barw"
-                width="370"
-                height="294"
+                width="100%"
               />
               <p class="specializations__description">design solutions</p>
             </div>
@@ -172,14 +201,15 @@
       <section class="worker section">
         <div class="container">
           <h2 class="section-heading">Our Team</h2>
-          <ul class="display">
-            <li>
+          <ul class="worker__list">
+            <li class="worker__item">
               <figure class="worker__specyfication">
                 <img
-                  src="./images/mainpage/photo-1.jpg"
+                  src="./images/mainpage/photo-1-450x460.jpg"
+                  srcset="./images/mainpage/photo-1-450x460@2x.jpg 2x"
                   alt="zdjęcie przedstawiające Johna Doe"
-                  width="270"
-                  height="260"
+                  width="450"
+                  height="460"
                 />
                 <figcaption class="worker__description">
                   <h4 class="worker__name">Christopher Walker</h4>
@@ -217,13 +247,14 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="worker__item">
               <figure class="worker__specyfication">
                 <img
-                  src="./images/mainpage/photo-2.jpg"
+                  src="./images/mainpage/photo-2-450x460.jpg"
+                  srcset="./images/mainpage/photo-2-450x460@2x.jpg 2x"
                   alt="zdjęcie przedstawiające Johna Doe"
-                  width="270"
-                  height="260"
+                  width="450"
+                  height="460"
                 />
                 <figcaption class="worker__description">
                   <h4 class="worker__name">Kylie Evans</h4>
@@ -261,13 +292,14 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="worker__item">
               <figure class="worker__specyfication">
                 <img
-                  src="./images/mainpage/photo-3.jpg"
+                  src="./images/mainpage/photo-3-450x460.jpg"
+                  srcset="./images/mainpage/photo-3-450x460@2x.jpg 2x"
                   alt="zdjęcie przedstawiające Johna Doe"
-                  width="270"
-                  height="260"
+                  width="450"
+                  height="460"
                 />
                 <figcaption class="worker__description">
                   <h4 class="worker__name">Ryan Harris</h4>
@@ -305,13 +337,14 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="worker__item">
               <figure class="worker__specyfication">
                 <img
-                  src="./images/mainpage/photo-4.jpg"
+                  src="./images/mainpage/photo-4-450x460.jpg"
+                  srcset="./images/mainpage/photo-4-450x460@2x 2x.jpg"
                   alt="zdjęcie przedstawiające Johna Doe"
-                  width="270"
-                  height="260"
+                  width="450"
+                  height="460"
                 />
                 <figcaption class="worker__description">
                   <h4 class="worker__name">Tyler Moore</h4>
@@ -356,7 +389,7 @@
 
     <section class="customs container section">
       <h2 class="section-heading">Regular Customers</h2>
-      <ul class="display">
+      <ul class="display-wrap customs__display">
         <li class="customs__item">
           <a class="customs__link" href="#">
             <svg class="customs__icon" width="106" height="60">
@@ -404,7 +437,7 @@
 
     <div class="page-footer">
       <footer class="container page-footer__layout">
-        <div class="contats-details">
+        <div class="contacts-details">
           <a class="logo page-footer__logo" href="./index.html"
             ><span class="logo--accent">Web</span>Studio</a
           >
@@ -506,7 +539,10 @@
           X
         </button>
         <div class="form">
-          <p class="form__title">Zostaw swoje dane w formularzu poniżej</p>
+          <p class="form__title">
+            Zostaw swoje dane w formularzu <br />
+            poniżej
+          </p>
           <form class="form__data">
             <label class="form__item">
               <span class="form__item-title">Imie</span>
@@ -533,7 +569,7 @@
               ><span class="form__item-title">Komentarz</span>
               <textarea
                 class="form__item-textarea"
-                rows="7"
+                rows="6"
                 name="comment"
                 placeholder="Wprowadź tekst"
               ></textarea>
@@ -555,15 +591,13 @@
                 <a
                   class="privacy-statement__text privacy-statement__text--link"
                   href="#"
-                >
-                  Regulamin</a
+                  >Regulamin</a
                 >
                 i
                 <a
                   class="privacy-statement__text privacy-statement__text--link"
                   href="#"
-                >
-                  Politykę Prywatności.</a
+                  >Politykę Prywatności.</a
                 >
               </label>
             </div>
@@ -574,7 +608,6 @@
         </div>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
@@ -596,15 +629,39 @@
 
       <ul class="mobile-menu">
         <li>
-          <a href="./index.html" class="link1">Studio</a>
+          <a href="./index.html" class="link mobile-menu__link">Studio</a>
         </li>
         <li>
-          <a href="./portfolio.html" class="link1">Portfolio</a>
+          <a href="./portfolio.html" class="link mobile-menu__link"
+            >Portfolio</a
+          >
         </li>
-        <li>
-          <a href="#" class="link1">Contacts</a>
-        </li>
+        <li><a href="#" class="link mobile-menu__link">Contacts</a></li>
       </ul>
+
+      <div class="mobile-menu__contacts">
+        <a class="link mobile-menu__contacts--linkL" href="tel:+12127724150">
+          +12 127 724 150</a
+        >
+        <a
+          class="link mobile-menu__contacts--linkS"
+          href="mailto:info@devstudio.com"
+        >
+          info@devstudio.com</a
+        >
+      </div>
+      <div class="mobile-menu__social">
+        <div class="mobile-menu__social-link--line">
+          <a class="mobile-menu__social-link" href="#">Instagram</a>
+        </div>
+        <div class="mobile-menu__social-link--line">
+          <a class="mobile-menu__social-link" href="#">Twitter</a>
+        </div>
+        <div class="mobile-menu__social-link--line">
+          <a class="mobile-menu__social-link" href="#">Facebook</a>
+        </div>
+        <a class="mobile-menu__social-link" href="#">Linkedln</a>
+      </div>
     </div>
 
     <script
@@ -613,6 +670,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="../goit-markup-hw-08/js/mobile-menu.js"></script>
   </body>
 </html>

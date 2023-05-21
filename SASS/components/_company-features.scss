@@ -2,7 +2,7 @@
 
 .company-features {
   background-color: getColor("white");
-  padding-bottom: 0px;
+
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -18,9 +18,39 @@
     color: getColor("text");
   }
   &__image {
-    box-sizing: border-box;
+    display: flex;
+
     background-color: getColor("background-light-grey");
     border-radius: 4px;
-    padding: 25px 100px;
+    min-height: 120px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .company-features {
+    padding-bottom: 45px;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .company-features__list {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .company-features__image {
+    width: 270px;
   }
 }
