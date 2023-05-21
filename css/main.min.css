@@ -858,8 +858,14 @@ input[placeholder=E-mail] {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+}
 .form {
-  max-width: 370px;
+  width: 370px;
   margin: 0 auto;
 }
 .form__title {
@@ -1004,6 +1010,11 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 448px;
+  }
+}
 .privacy-statement {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1015,8 +1026,9 @@ textarea::placeholder {
       -ms-flex-pack: center;
           justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 0.03em;
 }
 .privacy-statement__text {
   font-size: 12px;
