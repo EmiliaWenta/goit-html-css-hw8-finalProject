@@ -269,6 +269,7 @@ img {
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/mainpage/main-big-photo-480-400-1x.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mainpage/main-big-photo-480-400-1x.jpg);
 }
@@ -296,7 +297,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .main-photo {
-    width: 1600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/mainpage/main-big-photo-1600-600.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mainpage/main-big-photo-1600-600.jpg);
   }
