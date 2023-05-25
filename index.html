@@ -50,6 +50,49 @@
         </button>
       </div>
 
+      <div class="page-header container menu-768-to-1199">
+        <a class="logo page-header__logo link" href="./index.html"
+          ><span class="logo--accent">Web</span>Studio</a
+        >
+        <nav class="nav">
+          <ul class="page-header__nav nav__list display">
+            <li>
+              <div class="nav__link--is-active">
+                <a class="link nav__link" href="./index.html">Studio</a>
+              </div>
+            </li>
+            <li>
+              <a class="link nav__link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="link nav__link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="contacts display page-header__contacts">
+          <div>
+            <a
+              class="contacts__link display link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="icon" width="16" height="12">
+                <use href="./images/icon.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </div>
+          <div>
+            <a class="contacts__link display link" href="tel:+12127724150">
+              <svg class="icon" width="10" height="16">
+                <use href="./images/icon.svg#icon-smartphone"></use>
+              </svg>
+              +1 212-772-4150</a
+            >
+          </div>
+        </div>
+      </div>
+
       <div class="page-header container menu-up-1200">
         <a class="logo page-header__logo link" href="./index.html"
           ><span class="logo--accent">Web</span>Studio</a
@@ -626,14 +669,20 @@
 
       <ul class="mobile-menu">
         <li>
-          <a href="./index.html" class="link mobile-menu__link">Studio</a>
+          <a href="./index.html" class="link mobile-menu__link">
+            <span class="mobile-menu__is-active">Studio</span></a
+          >
         </li>
         <li>
           <a href="./portfolio.html" class="link mobile-menu__link"
             >Portfolio</a
           >
         </li>
-        <li><a href="#" class="link mobile-menu__link">Contacts</a></li>
+        <li class="mobile-menu--last-child">
+          <a href="#" class="link mobile-menu__link mobile-menu--last-child"
+            >Contacts</a
+          >
+        </li>
       </ul>
 
       <div class="mobile-menu__contacts">
@@ -667,6 +716,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="../goit-markup-hw-08/js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

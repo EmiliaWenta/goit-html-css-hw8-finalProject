@@ -28,6 +28,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .company-features__title {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .company-features {
     padding-bottom: 45px;

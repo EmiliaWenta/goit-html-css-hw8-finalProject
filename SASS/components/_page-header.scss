@@ -6,8 +6,8 @@
 
 .page-header {
   background-color: getColor("white");
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   min-height: 60px;
 
   &__logo {
@@ -20,6 +20,12 @@
 
   &__contacts {
     margin-left: 415px;
+  }
+}
+
+@media screen and (max-width: 767px), (min-width: 1199px) {
+  .menu-768-to-1199 {
+    display: none;
   }
 }
 
@@ -48,5 +54,24 @@
 
   .page-header__contacts {
     gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-768-to-1199 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .page-header {
+    &__nav {
+      margin-left: 0px;
+    }
+    &__contacts {
+      margin-left: 0px;
+    }
   }
 }

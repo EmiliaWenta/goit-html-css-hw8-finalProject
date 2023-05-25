@@ -2,4 +2,27 @@
   background-color: getColor("white");
   max-width: 100%;
   padding: 0;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    flex-basis: calc((100% - 30px) / 2);
+    justify-content: flex-start;
+
+    &__item {
+      width: 354px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    flex-basis: calc((100% - 60px) / 3);
+    &__item {
+      width: 370px;
+    }
+  }
 }

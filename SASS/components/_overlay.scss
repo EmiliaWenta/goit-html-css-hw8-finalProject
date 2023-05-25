@@ -17,7 +17,7 @@
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    width: 370px;
+    width: 450px;
     height: 294px;
   }
 
@@ -39,5 +39,17 @@
     color: getColor("white");
     padding: 63px 24px 93px 24px;
     z-index: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-item-box__image {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-item-box__image {
+    width: 370px;
   }
 }

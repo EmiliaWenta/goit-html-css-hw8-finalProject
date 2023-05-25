@@ -25,45 +25,115 @@
 
   <body>
     <div class="line">
-      <header class="page-header display container">
-        <a class="logo page-header__logo link" href="./index.html"
-          ><span class="logo--accent">Web</span>Studio</a
-        >
-        <nav class="nav">
-          <ul class="page-header__nav nav__list display">
-            <li>
-              <a class="link nav__link" href="./index.html">Studio</a>
-            </li>
-            <li>
-              <div class="nav__link--is-active">
-                <a class="link nav__link" href="./portfolio.html">Portfolio</a>
-              </div>
-            </li>
-            <li>
-              <a class="link nav__link" href="#">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+      <header class="page-header">
+        <div class="container display menu-to-767">
+          <a class="logo link" href="./index.html"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
 
-        <div class="contacts display page-header__contacts">
-          <div>
-            <a
-              class="contacts__link display link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="icon" width="16" height="12">
-                <use href="./images/icon.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+        <div class="page-header container menu-768-to-1199">
+          <a class="logo page-header__logo link" href="./index.html"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
+          <nav class="nav">
+            <ul class="page-header__nav nav__list display">
+              <li>
+                <div class="nav__link--is-active">
+                  <a class="link nav__link" href="./index.html">Studio</a>
+                </div>
+              </li>
+              <li>
+                <a class="link nav__link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li>
+                <a class="link nav__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="contacts display page-header__contacts">
+            <div>
+              <a
+                class="contacts__link display link"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="icon" width="16" height="12">
+                  <use href="./images/icon.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </div>
+            <div>
+              <a class="contacts__link display link" href="tel:+12127724150">
+                <svg class="icon" width="10" height="16">
+                  <use href="./images/icon.svg#icon-smartphone"></use>
+                </svg>
+                +1 212-772-4150</a
+              >
+            </div>
           </div>
-          <div>
-            <a class="contacts__link display link" href="tel:+12127724150">
-              <svg class="icon" width="10" height="16">
-                <use href="./images/icon.svg#icon-smartphone"></use>
-              </svg>
-              +1 212-772-4150</a
-            >
+        </div>
+
+        <div class="page-header container menu-up-1200">
+          <a class="logo page-header__logo link" href="./index.html"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
+          <nav class="nav">
+            <ul class="page-header__nav nav__list display">
+              <li>
+                <div class="nav__link--is-active">
+                  <a class="link nav__link" href="./index.html">Studio</a>
+                </div>
+              </li>
+              <li>
+                <a class="link nav__link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li>
+                <a class="link nav__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="contacts display page-header__contacts">
+            <div>
+              <a
+                class="contacts__link display link"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="icon" width="16" height="12">
+                  <use href="./images/icon.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </div>
+            <div>
+              <a class="contacts__link display link" href="tel:+12127724150">
+                <svg class="icon" width="10" height="16">
+                  <use href="./images/icon.svg#icon-smartphone"></use>
+                </svg>
+                +1 212-772-4150</a
+              >
+            </div>
           </div>
         </div>
       </header>
@@ -89,16 +159,21 @@
           </li>
         </ul>
 
-        <ul class="display display--wrap portfolio">
+        <ul class="display portfolio">
           <li class="portfolio__item">
             <div class="portfolio-item-box">
               <figure>
                 <div class="portfolio-item-box__image">
                   <img
-                    src="./images/portfolio/img1.jpg"
+                    src="./images/portfolio/img1-450x294.jpg"
+                    srcset="
+                      ./images/portfolio/img1-354x294.jpg 354w,
+                      ./images/portfolio/img1-370x294.jpg 370w
+                    "
+                    sizes="100vw"
                     alt="przykładowa strona internetowa zawierająca zdjęcia oraz opis pracowników"
-                    width="370"
-                    height="294"
+                    width="100%"
+                    height="100%"
                   />
                   <div class="portfolio-item-box__overlay">
                     <p class="portfolio-item-box__text">
@@ -108,7 +183,7 @@
                     </p>
                   </div>
                 </div>
-                <figcaption class="project-description">
+                <figcaption class="project-description project-description-L">
                   <h4 class="project-description__name-of-company">
                     Technocrack
                   </h4>
@@ -122,10 +197,15 @@
               <figure>
                 <div class="portfolio-item-box__image">
                   <img
-                    src="./images/portfolio/img2.jpg"
+                    src="./images/portfolio/img2-450x294.jpg"
+                    srcset="
+                      ./images/portfolio/img2-354x294.jpg 354w,
+                      ./images/portfolio/img2-370x294.jpg 370w
+                    "
+                    sizes="100vw"
                     alt="zdjęcie przedstawiające grających 2 koszykarzy"
-                    width="370"
-                    height="294"
+                    width="100%"
+                    height="100%"
                   />
                   <div class="portfolio-item-box__overlay">
                     <p class="portfolio-item-box__text">
@@ -149,10 +229,15 @@
               <figure>
                 <div class="portfolio-item-box__image">
                   <img
-                    src="./images/portfolio/img3.jpg"
+                    src="./images/portfolio/img3-450x294.jpg"
+                    srcset="
+                      ./images/portfolio/img3-354x294.jpg 354w,
+                      ./images/portfolio/img3-370x294.jpg 370w
+                    "
+                    sizes="100vw"
                     alt="logo restauracji Seafood przedstawiające rybę oraz nazwę restauracji"
-                    width="370"
-                    height="294"
+                    width="100%"
+                    height="100%"
                   />
                   <div class="portfolio-item-box__overlay">
                     <p class="portfolio-item-box__text">
@@ -176,10 +261,15 @@
               <figure>
                 <div class="portfolio-item-box__image">
                   <img
-                    src="./images/portfolio/img4.jpg"
+                    src="./images/portfolio/img4-450x294.jpg"
+                    srcset="
+                      ./images/portfolio/img4-354x294.jpg 354w,
+                      ./images/portfolio/img4-370x294.jpg 370w
+                    "
+                    sizes="100vw"
                     alt="czarne słuchawki nauszne"
-                    width="370"
-                    height="294"
+                    width="100%"
+                    height="100%"
                   />
                   <div class="portfolio-item-box__overlay">
                     <p class="portfolio-item-box__text">
@@ -203,10 +293,15 @@
               <figure>
                 <div class="portfolio-item-box__image">
                   <img
-                    src="./images/portfolio/img5.jpg"
+                    src="./images/portfolio/img5-450x294.jpg"
+                    srcset="
+                      ./images/portfolio/img5-354x294.jpg 354w,
+                      ./images/portfolio/img5-370x294.jpg 370w
+                    "
+                    sizes="100vw"
                     alt="zdjęcie dwóch pudełek, białe jest większe od brązowego"
-                    width="370"
-                    height="294"
+                    width="100%"
+                    height="100%"
                   />
                   <div class="portfolio-item-box__overlay">
                     <p class="portfolio-item-box__text">
@@ -230,10 +325,15 @@
               <figure>
                 <div class="portfolio-item-box__image">
                   <img
-                    src="./images/portfolio/img6.jpg"
+                    src="./images/portfolio/img6-450x294.jpg"
+                    srcset="
+                      ./images/portfolio/img6-354x294.jpg 354w,
+                      ./images/portfolio/img6-370x294.jpg 370w
+                    "
+                    sizes="100vw"
                     alt="główna strona internetowa zawierająca grafikę świata oraz napis: inspiracja nie ma granic"
-                    width="370"
-                    height="294"
+                    width="100%"
+                    height="100%"
                   />
                   <div class="portfolio-item-box__overlay">
                     <p class="portfolio-item-box__text">
@@ -257,10 +357,15 @@
               <figure>
                 <div class="portfolio-item-box__image">
                   <img
-                    src="./images/portfolio/img7.jpg"
+                    src="./images/portfolio/img7-450x294.jpg"
+                    srcset="
+                      ./images/portfolio/img7-354x294.jpg 354w,
+                      ./images/portfolio/img7-370x294.jpg 370w
+                    "
+                    sizes="100vw"
                     alt="otwarty magazyn limited edition"
-                    width="370"
-                    height="294"
+                    width="100%"
+                    height="100%"
                   />
                   <div class="portfolio-item-box__overlay">
                     <p class="portfolio-item-box__text">
@@ -284,10 +389,15 @@
               <figure>
                 <div class="portfolio-item-box__image">
                   <img
-                    src="./images/portfolio/img8.jpg"
+                    src="./images/portfolio/img8-450x294.jpg"
+                    srcset="
+                      ./images/portfolio/img8-354x294.jpg 354w,
+                      ./images/portfolio/img8-370x294.jpg 370w
+                    "
+                    sizes="100vw"
                     alt="zawieszka na sznurku z napisem labeltag"
-                    width="370"
-                    height="294"
+                    width="100%"
+                    height="100%"
                   />
                   <div class="portfolio-item-box__overlay">
                     <p class="portfolio-item-box__text">
@@ -311,10 +421,15 @@
               <figure>
                 <div class="portfolio-item-box__image">
                   <img
-                    src="./images/portfolio/img9.jpg"
+                    src="./images/portfolio/img9-450x294.jpg"
+                    srcset="
+                      ./images/portfolio/img9-354x294.jpg 354w,
+                      ./images/portfolio/img9-370x294.jpg 370w
+                    "
+                    sizes="100vw"
                     alt="otwarty laptop ze stroną o rozwoju biznesu, na klawiaturze widać ręce ustawione do pisania"
-                    width="370"
-                    height="294"
+                    width="100%"
+                    height="100%"
                   />
                   <div class="portfolio-item-box__overlay">
                     <p class="portfolio-item-box__text">
@@ -339,7 +454,7 @@
 
     <div class="page-footer">
       <footer class="container page-footer__layout">
-        <div class="contats-details">
+        <div class="contacts-details">
           <a class="logo page-footer__logo" href="./index.html"
             ><span class="logo--accent">Web</span>Studio</a
           >
@@ -434,5 +549,72 @@
         </section>
       </footer>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li>
+          <a href="./index.html" class="link mobile-menu__link">
+            <span class="mobile-menu__is-active">Studio</span></a
+          >
+        </li>
+        <li>
+          <a href="./portfolio.html" class="link mobile-menu__link"
+            >Portfolio</a
+          >
+        </li>
+        <li class="mobile-menu--last-child">
+          <a href="#" class="link mobile-menu__link mobile-menu--last-child"
+            >Contacts</a
+          >
+        </li>
+      </ul>
+
+      <div class="mobile-menu__contacts">
+        <a class="link mobile-menu__contacts--linkL" href="tel:+12127724150">
+          +12 127 724 150</a
+        >
+        <a
+          class="link mobile-menu__contacts--linkS"
+          href="mailto:info@devstudio.com"
+        >
+          info@devstudio.com</a
+        >
+      </div>
+      <div class="mobile-menu__social">
+        <div class="mobile-menu__social-link--line">
+          <a class="mobile-menu__social-link" href="#">Instagram</a>
+        </div>
+        <div class="mobile-menu__social-link--line">
+          <a class="mobile-menu__social-link" href="#">Twitter</a>
+        </div>
+        <div class="mobile-menu__social-link--line">
+          <a class="mobile-menu__social-link" href="#">Facebook</a>
+        </div>
+        <a class="mobile-menu__social-link" href="#">Linkedln</a>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,9 +1,10 @@
 .buttons {
   display: flex;
   gap: 8px;
-  justify-content: center;
-  padding-bottom: 50px;
+  justify-content: flex-start;
+  padding-bottom: 40px;
   list-style: none;
+  flex-wrap: wrap;
   &__item {
     font-weight: 500;
     font-size: 16px;
@@ -24,5 +25,18 @@
       border-radius: 4px;
       outline: none;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons {
+    padding-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .buttons {
+    padding-bottom: 50px;
   }
 }
