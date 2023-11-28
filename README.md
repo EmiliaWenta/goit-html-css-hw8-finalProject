@@ -33,8 +33,7 @@ Project is created with:
 
 ## Screenshots
 
-
-
+https://github.com/EmiliaWenta/goit-html-css-hw8-finalProject/assets/126571469/85ea7104-cb03-4d88-8eb2-2a7777b5d99c
 
 ## Setup
 
@@ -55,6 +54,6 @@ Project is: _complete_
 - This project was based on template figma
  [[this tutorial]([https://github.com/goitacademy/react-homework-template#readme](https://www.figma.com/file/SqiyweSseH96c3wVZmnGfq/Zadanie-domowe-GOIT-Polska?type=design&node-id=5766-5&mode=design))]
 - Many thanks for GoIT Team.
-- 
+
 ## Contact
 Created by [@EmiliaWenta](https://github.com/EmiliaWenta) - feel free to contact me!
