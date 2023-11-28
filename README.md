@@ -7,7 +7,7 @@
 
 - [General Info](#general-information)
 - [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
+- [Video](#video)
 - [Setup](#setup)
 - [Project Status](#project-status)
 - [Acknowledgements](#acknowledgements)
@@ -31,7 +31,7 @@ Project is created with:
 - strategy Mobile First,
 
 
-## Screenshots
+## Video
 
 https://github.com/EmiliaWenta/goit-html-css-hw8-finalProject/assets/126571469/85ea7104-cb03-4d88-8eb2-2a7777b5d99c
 
